@@ -62,7 +62,8 @@ function App() {
       <Board squares={gamingBoard.squares} handleClick={handleClick} winningSquares={winningSquares} />
       <button type='button' onClick={() => setNewGame()} className={`btn-reset ${winner ? 'active' : ''}`}>Start New Game</button>
       <h2>Current Game History</h2>
-      <History history={history} moveTo={moveTo} currentMove={currentMove}/>
+      <History history={history} moveTo={moveTo} currentMove={currentMove} />
+      <div className='bg-balls'></div>
     </div>
   )
 }
